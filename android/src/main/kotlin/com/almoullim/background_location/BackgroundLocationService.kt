@@ -84,6 +84,7 @@ class BackgroundLocationService: MethodChannel.MethodCallHandler, PluginRegistry
     }
 
     fun onDetachedFromEngine() {
+        //TODO Add [stopLocationService] here and test it
         channel.setMethodCallHandler(null)
         context = null
         isAttached = false
